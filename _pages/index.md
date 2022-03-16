@@ -5,18 +5,14 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# Welcome 🥳
 
-<p style="padding: 3em 1em; background: #f5f7ff; border-radius: 4px;">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+This is my new mind garden! 🌿
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
+I love the framing of a [mind garden](https://nesslabs.com/mind-garden):
 
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+> taking care of your mind involves cultivating your curiosity (the seeds), growing your knowledge (the trees), and producing new thoughts (the fruits)
 
-<style>
-  .wrapper {
-    max-width: 46em;
-  }
-</style>
+_(This site is more accurately perhaps a digital garden manifestation of my mind garden, but I don't like the word "digital" being so prominent)_
+
+That's it for now.

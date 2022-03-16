@@ -1,0 +1,36 @@
+#!/bin/bash
+
+set -eu
+
+RUBY_IMAGE="ruby:3.1.1"
+
+run() {
+  docker run \
+    -it \
+    --rm \
+    -w /src \
+    -v $(pwd):/src \
+    -v "mind-garden_vendor:/vendor" \
+    -e BUNDLE_PATH=/vendor \
+    -p 8080:8080 \
+    "$RUBY_IMAGE" \
+    "$@"
+}
+
+case $1 in
+  "" | "-h" | "--help")
+    echo "Usage: bundle|build|serve|shell"
+    ;;
+  shell)
+    run bash
+    ;;
+  bundle)
+    run bundle install
+    ;;
+  build)
+    run bundle exec jekyll build
+    ;;
+  serve)
+    run bundle exec jekyll serve -H 0.0.0.0 -P 8080
+    ;;
+esac
